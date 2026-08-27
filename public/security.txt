@@ -1,0 +1,3 @@
+# Replace the repository owner before publishing.
+Contact: https://github.com/bleakbelladonnals/bondmemo/security/advisories/new
+Disclosure: Full

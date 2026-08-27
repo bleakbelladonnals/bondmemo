@@ -1,0 +1,241 @@
+.assistant-nav-cta {
+  background: $bondmemo-primary;
+  border-radius: 9px;
+  color: #ffffff;
+  margin-right: 8px;
+
+  &:hover,
+  &:focus {
+    background: $bondmemo-primary-dark;
+    color: #ffffff;
+  }
+}
+
+.assistant-page {
+  min-height: calc(100vh - 150px);
+}
+
+.assistant-card,
+.contact-brief-panel {
+  background: $bondmemo-surface;
+  border: 1px solid $bondmemo-line;
+  border-radius: 20px;
+  box-shadow: $bondmemo-shadow;
+}
+
+.assistant-card {
+  padding: 32px;
+}
+
+.assistant-card-header,
+.contact-brief-heading,
+.assistant-actions {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.assistant-card-header {
+  border-bottom: 1px solid $bondmemo-line;
+  margin-bottom: 28px;
+  padding-bottom: 22px;
+
+  h1 {
+    color: $bondmemo-ink;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 36px;
+    letter-spacing: -0.035em;
+    margin: 3px 0 8px;
+  }
+
+  p:last-child {
+    color: $bondmemo-muted;
+    margin: 0;
+  }
+}
+
+.assistant-eyebrow {
+  color: $bondmemo-sage;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.assistant-step {
+  background: $bondmemo-primary-soft;
+  border-radius: 999px;
+  color: $bondmemo-primary-dark;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 7px 11px;
+  white-space: nowrap;
+}
+
+.assistant-contact-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0 20px;
+  min-height: 20px;
+}
+
+.assistant-chip {
+  background: $bondmemo-primary-soft;
+  border: 1px solid rgba($bondmemo-primary, 0.2);
+  border-radius: 999px;
+  color: $bondmemo-primary-dark;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 6px 10px;
+}
+
+.assistant-date {
+  max-width: 220px;
+}
+
+.assistant-privacy-note,
+.assistant-confirm-note {
+  color: $bondmemo-muted;
+  font-size: 12px;
+  margin: 12px 0 18px;
+}
+
+.assistant-error {
+  background: #fff0ee;
+  border-radius: 10px;
+  color: #9c4037;
+  padding: 10px 12px;
+}
+
+.assistant-muted {
+  color: $bondmemo-muted;
+}
+
+.assistant-review-section {
+  border-bottom: 1px solid $bondmemo-line;
+  margin-bottom: 22px;
+  padding-bottom: 22px;
+
+  h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+}
+
+.assistant-proposal-row {
+  align-items: center;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto minmax(180px, 1fr) minmax(150px, 220px);
+  margin-bottom: 10px;
+}
+
+.assistant-proposal-row-reminder {
+  grid-template-columns: auto minmax(180px, 1fr) 150px minmax(140px, 200px);
+}
+
+.assistant-success,
+.assistant-empty {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.assistant-success-mark {
+  align-items: center;
+  background: #e9f4ef;
+  border-radius: 50%;
+  color: $bondmemo-sage;
+  display: flex;
+  font-size: 28px;
+  height: 64px;
+  justify-content: center;
+  margin: 0 auto 18px;
+  width: 64px;
+}
+
+.contact-brief {
+  margin-top: 18px;
+}
+
+.contact-brief-panel {
+  margin-top: 16px;
+  padding: 24px;
+  text-align: left;
+}
+
+.contact-brief-heading h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  margin: 3px 0 0;
+}
+
+.contact-brief-overview {
+  border-bottom: 1px solid $bondmemo-line;
+  color: $bondmemo-ink;
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 18px 0;
+  padding-bottom: 18px;
+
+  p {
+    margin: 0;
+  }
+
+  small {
+    color: $bondmemo-muted;
+    display: block;
+    font-size: 10px;
+    margin-top: 4px;
+  }
+}
+
+.contact-brief-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.contact-brief-section {
+  background: $bondmemo-canvas;
+  border: 1px solid $bondmemo-line;
+  border-radius: 13px;
+  padding: 16px;
+
+  h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  small {
+    color: $bondmemo-muted;
+    display: block;
+    font-size: 10px;
+    margin-top: 3px;
+  }
+}
+
+@media (max-width: 767px) {
+  .assistant-card {
+    padding: 20px;
+  }
+
+  .assistant-card-header h1 {
+    font-size: 29px;
+  }
+
+  .assistant-proposal-row,
+  .assistant-proposal-row-reminder,
+  .contact-brief-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .assistant-proposal-row > input[type="checkbox"] {
+    justify-self: start;
+  }
+}

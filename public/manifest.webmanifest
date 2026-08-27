@@ -1,0 +1,25 @@
+{
+  "name": "BondMemo",
+  "short_name": "BondMemo",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f7f5f0",
+  "theme_color": "#5267d8",
+  "description": "Remember the moments that keep relationships close.",
+  "icons": [
+    {
+      "src": "/img/bondmemo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/img/icons/bondmemo-196.png",
+      "sizes": "196x196",
+      "type": "image/png"
+    }
+  ],
+  "orientation": "portrait-primary",
+  "related_applications": [{
+    "platform": "web"
+  }]
+}
