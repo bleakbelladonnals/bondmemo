@@ -26,7 +26,7 @@
 </p>
 
 > [!IMPORTANT]
-> BondMemo is an early, local-first MVP built on the mature Monica 4.x foundation. It is ready for product evaluation and development—not for an unaudited public deployment.
+> BondMemo is an early, local-first MVP built on a mature open-source personal relationship management foundation. It is ready for product evaluation and development—not for an unaudited public deployment.
 
 ## Why BondMemo
 
@@ -94,7 +94,7 @@ RelationshipAgentClient interface
 OpenAI-compatible chat-completions provider
 ```
 
-BondMemo reuses Monica's mature contact, relationship, activity, task, reminder, journal, import/export, REST API, CardDAV, and CalDAV foundations. The new assistant remains an isolated application layer; the MVP adds no vector database and no new database tables.
+BondMemo builds on mature contact, relationship, activity, task, reminder, journal, import/export, REST API, CardDAV, and CalDAV foundations. The new assistant remains an isolated application layer; the MVP adds no vector database and no new database tables.
 
 ## Privacy and Agent boundaries
 
@@ -200,7 +200,7 @@ Frontend components pass ESLint and compile through the production Laravel Mix p
 
 ### Known engineering work before production
 
-- upgrade and audit the inherited Monica 4.x dependency tree;
+- upgrade and audit the inherited legacy dependency tree;
 - complete a clean Docker build in an unrestricted registry environment;
 - validate model quality with a real provider;
 - finish public privacy, terms, backup, mail, queue, and monitoring configuration;
@@ -212,11 +212,9 @@ Do not open public issues containing sensitive vulnerability details. Please fol
 
 The inherited external version check is disabled by default. Document uploads use an explicit allowlist and private storage visibility by default.
 
-## Upstream and license
+## License and attribution
 
-BondMemo is a modified work based on [Monica 4.x](https://github.com/monicahq/monica), created by the Monica project contributors. BondMemo is not affiliated with or endorsed by the Monica project.
-
-See [`NOTICE.md`](NOTICE.md) for attribution and [`LICENSE.md`](LICENSE.md) for the GNU Affero General Public License, version 3. If you provide a modified version over a network, review the AGPL source-availability obligations that apply to your deployment.
+BondMemo is distributed under the GNU Affero General Public License, version 3. Required upstream attribution for the Monica 4.x source foundation is kept in [`NOTICE.md`](NOTICE.md); BondMemo is an independent project and is not affiliated with or endorsed by the upstream project. See [`LICENSE.md`](LICENSE.md) for the complete license terms.
 
 ---
 
